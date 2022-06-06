@@ -1,0 +1,37 @@
+.app__header {
+  &-navbar {
+    li {
+      a {
+        color: $lightGreyColor;
+        padding: 8px;
+        &:hover {
+          color: $whiteColor;
+        }
+        &.active_link {
+          background-color: $blueColor;
+          border-radius: 143px;
+          padding: 8px;
+          color: $whiteColor;
+        }
+      }
+    }
+  }
+  &-search_notification {
+    color: $lightGreyColor;
+    .app__header-notification_arrow {
+      color: $darkGreyColor;
+      margin-right: 3px;
+      transform: translate3d(0, -800px, 0);
+      &.notification_open {
+        animation: fadeInDown 0.5s ease-in-out forwards;
+      }
+    }
+    .app__header-search {
+      input {
+        background-color: $darkGreyColor;
+        border-radius: 24px;
+        padding: 10px;
+      }
+    }
+  }
+}

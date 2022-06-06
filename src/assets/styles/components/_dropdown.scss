@@ -1,0 +1,42 @@
+.app__dropdown {
+  background-color: $darkGreyColor;
+  font-weight: 300;
+  max-height: 475px;
+  // overflow-y: scroll;
+  transform: translate3d(0, -800px, 0);
+  &.notification_open {
+    animation: fadeInDown 0.5s ease-in-out forwards;
+  }
+  &_list {
+    &-item {
+      cursor: pointer;
+      &:hover {
+        background-color: $coalColor;
+      }
+      &_icon {
+        font-size: 20px;
+        border-radius: 50%;
+        span {
+          width: 50px;
+          height: 50px;
+          line-height: 50px;
+          background-color: $blueColor;
+          color: $whiteColor;
+        }
+      }
+      &_info {
+        h3 {
+          font-size: 14px;
+        }
+        h5 {
+          font-size: 12px;
+          color: #6c6c6c;
+          margin-top: -12px;
+        }
+      }
+    }
+    hr {
+      border-color: $coalColor;
+    }
+  }
+}

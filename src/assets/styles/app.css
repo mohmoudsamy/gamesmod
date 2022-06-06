@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -10%, 0);
+            transform: translate3d(0, -10%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -10%, 0);
+            transform: translate3d(0, -10%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes fadeOutUp {
+  from {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 10%, 0);
+            transform: translate3d(0, 10%, 0);
+  }
+}
+
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 10%, 0);
+            transform: translate3d(0, 10%, 0);
+  }
+}
+
+.app__header-navbar li a {
+  color: rgba(235, 235, 245, 0.6);
+  padding: 8px;
+}
+
+.app__header-navbar li a:hover {
+  color: #ffffff;
+}
+
+.app__header-navbar li a.active_link {
+  background-color: #0061fd;
+  border-radius: 143px;
+  padding: 8px;
+  color: #ffffff;
+}
+
+.app__header-search_notification {
+  color: rgba(235, 235, 245, 0.6);
+}
+
+.app__header-search_notification .app__header-notification_arrow {
+  color: #2f2f2f;
+  margin-right: 3px;
+  -webkit-transform: translate3d(0, -800px, 0);
+          transform: translate3d(0, -800px, 0);
+}
+
+.app__header-search_notification .app__header-notification_arrow.notification_open {
+  -webkit-animation: fadeInDown 0.5s ease-in-out forwards;
+          animation: fadeInDown 0.5s ease-in-out forwards;
+}
+
+.app__header-search_notification .app__header-search input {
+  background-color: #2f2f2f;
+  border-radius: 24px;
+  padding: 10px;
+}
+
+.app__sidebar {
+  height: 100vh;
+  border-right-color: #38383a;
+}
+
+.app__sidebar-links_item {
+  color: rgba(235, 235, 245, 0.6);
+  font-weight: 300;
+  padding: 12px 16px 12px 37px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.app__sidebar-links_item:hover {
+  background-color: #2f2f2f;
+  border-radius: 12px;
+  color: #ffffff;
+}
+
+.app__sidebar-links_item span {
+  width: 24px;
+  margin-right: 15px;
+}
+
+.app__dropdown {
+  background-color: #2f2f2f;
+  font-weight: 300;
+  max-height: 475px;
+  -webkit-transform: translate3d(0, -800px, 0);
+          transform: translate3d(0, -800px, 0);
+}
+
+.app__dropdown.notification_open {
+  -webkit-animation: fadeInDown 0.5s ease-in-out forwards;
+          animation: fadeInDown 0.5s ease-in-out forwards;
+}
+
+.app__dropdown_list-item {
+  cursor: pointer;
+}
+
+.app__dropdown_list-item:hover {
+  background-color: #38383a;
+}
+
+.app__dropdown_list-item_icon {
+  font-size: 20px;
+  border-radius: 50%;
+}
+
+.app__dropdown_list-item_icon span {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #0061fd;
+  color: #ffffff;
+}
+
+.app__dropdown_list-item_info h3 {
+  font-size: 14px;
+}
+
+.app__dropdown_list-item_info h5 {
+  font-size: 12px;
+  color: #6c6c6c;
+  margin-top: -12px;
+}
+
+.app__dropdown_list hr {
+  border-color: #38383a;
+}
+
+.app__mainpreview-current_slide img {
+  z-index: -1;
+}
+
+.app__mainpreview-current_slide-game_name {
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.app__mainpreview-current_slide-details {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 20, 20, 0)), to(rgba(20, 20, 20, 0.8)));
+  background: linear-gradient(180deg, rgba(20, 20, 20, 0) 0%, rgba(20, 20, 20, 0.8) 100%);
+}
+
+.app__mainpreview-current_slide-details_state {
+  font-size: 14px;
+  font-weight: 600px;
+}
+
+.app__mainpreview-current_slide-details_text {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.app__mainpreview-current_slide-details button {
+  background-color: #0061fd;
+  padding: 16px 18px 16px 18px;
+  border-radius: 14px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.app__mainpreview-slide_list {
+  background-color: #38383a;
+}
+
+.app__mainpreview-slide_list-item {
+  border-bottom: 1px solid #ffffff;
+}
+
+.app__mainpreview-slide_list-item:hover {
+  background-color: #2f2f2f;
+}
+
+body {
+  background-color: #141414;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #2f2f2f;
+}
+
+::-webkit-scrollbar-thumb {
+  cursor: copy;
+  background-color: #38383a;
+}
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,43 @@
+.app__mainpreview {
+  &-current_slide {
+    img {
+      z-index: -1;
+    }
+    &-game_name {
+      font-size: 26px;
+      font-weight: 800;
+    }
+    &-details {
+      background: linear-gradient(
+        180deg,
+        rgba($darkColor, 0) 0%,
+        rgba($darkColor, 0.8) 100%
+      );
+
+      &_state {
+        font-size: 14px;
+        font-weight: 600px;
+      }
+      &_text {
+        font-size: 24px;
+        font-weight: 800;
+      }
+      button {
+        background-color: $blueColor;
+        padding: 16px 18px 16px 18px;
+        border-radius: 14px;
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+  }
+  &-slide_list {
+    background-color: $coalColor;
+    &-item {
+      border-bottom: 1px solid $whiteColor;
+      &:hover {
+        background-color: $darkGreyColor;
+      }
+    }
+  }
+}
