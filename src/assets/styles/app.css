@@ -89,7 +89,6 @@
 }
 
 .app__sidebar {
-  height: 100vh;
   border-right-color: #38383a;
 }
 
@@ -162,31 +161,31 @@
   border-color: #38383a;
 }
 
-.app__mainpreview-current_slide img {
+.app__games_slider-current_slide img {
   z-index: -1;
 }
 
-.app__mainpreview-current_slide-game_name {
+.app__games_slider-current_slide-game_name {
   font-size: 26px;
   font-weight: 800;
 }
 
-.app__mainpreview-current_slide-details {
+.app__games_slider-current_slide-details {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(20, 20, 20, 0)), to(rgba(20, 20, 20, 0.8)));
   background: linear-gradient(180deg, rgba(20, 20, 20, 0) 0%, rgba(20, 20, 20, 0.8) 100%);
 }
 
-.app__mainpreview-current_slide-details_state {
+.app__games_slider-current_slide-details_state {
   font-size: 14px;
   font-weight: 600px;
 }
 
-.app__mainpreview-current_slide-details_text {
+.app__games_slider-current_slide-details_text {
   font-size: 24px;
   font-weight: 800;
 }
 
-.app__mainpreview-current_slide-details button {
+.app__games_slider-current_slide-details button {
   background-color: #0061fd;
   padding: 16px 18px 16px 18px;
   border-radius: 14px;
@@ -194,16 +193,36 @@
   font-weight: 600;
 }
 
-.app__mainpreview-slide_list {
+.app__games_slider-slide_list {
   background-color: #38383a;
 }
 
-.app__mainpreview-slide_list-item {
-  border-bottom: 1px solid #ffffff;
+.app__games_slider-slide_list-item:hover {
+  background-color: #2f2f2f;
 }
 
-.app__mainpreview-slide_list-item:hover {
-  background-color: #2f2f2f;
+.app__games_sale {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.app__games_sale-upper_bar-controllers span:hover {
+  color: rgba(235, 235, 245, 0.6);
+}
+
+.app__games_sale-games_list-game_info-category {
+  color: rgba(235, 235, 245, 0.6);
+}
+
+.app__games_sale-games_list-game_info-price span.game__discount {
+  border-radius: 6px;
+  background-color: #b1dd8b;
+  color: #38383a;
+}
+
+.app__games_sale-games_list-game_info-price span.game__price_before {
+  color: rgba(235, 235, 245, 0.6);
+  text-decoration: line-through;
 }
 
 body {

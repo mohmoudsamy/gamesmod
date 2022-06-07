@@ -8,7 +8,7 @@ import { selectGameAction } from "../services/actions/actions";
 
 const playArrow = <FontAwesomeIcon icon={faArrowRight} />;
 
-const MainPreview = ({
+const GamesSlider = ({
   sliderGamesData,
   sliderGamesDataSelected,
   selectGameAction,
@@ -23,23 +23,23 @@ const MainPreview = ({
 
       return (
         <div
-          className="app__mainpreview-current_slide w-9/12 flex flex-col justify-between bg-cover rounded-tl-lg rounded-bl-lg relative"
+          className="app__games_slider-current_slide w-9/12 flex flex-col justify-between bg-cover relative"
           ref={ref}
           key={i}
         >
           <img
-            className="absolute w-full bg-no-repeat h-full"
+            className="absolute w-full bg-no-repeat h-full rounded-tl-lg rounded-bl-lg"
             src={gameImg}
             alt={gameName}
           />
-          <h1 className="app__mainpreview-current_slide-game_name pl-7 pt-5">
+          <h1 className="app__games_slider-current_slide-game_name pl-7 pt-5">
             {gameName}
           </h1>
-          <div className="app__mainpreview-current_slide-details pl-7 pb-8">
-            <p className="app__mainpreview-current_slide-details_state">
+          <div className="app__games_slider-current_slide-details pl-7 pb-8">
+            <p className="app__games_slider-current_slide-details_state">
               {gameState}
             </p>
-            <h2 className="app__mainpreview-current_slide-details_text w-96 mb-10">
+            <h2 className="app__games_slider-current_slide-details_text w-96 mb-10">
               {gameText}
             </h2>
             <button type="submit">
@@ -57,17 +57,17 @@ const MainPreview = ({
       let { gameName, gameIcon } = game;
       return (
         <li
-          className="app__mainpreview-slide_list-item p-3 flex items-center cursor-pointer transition ease-in-out duration-500"
+          className="app__games_slider-slide_list-item p-3 flex items-center cursor-pointer transition ease-in-out duration-500"
           key={i}
           onClick={() => selectGameAction(game)}
           onLoad={() => selectGameAction(Object.values(sliderGamesData)[0])}
         >
           <img
-            className="app__mainpreview-slide_list-item_img w-12"
+            className="app__games_slider-slide_list-item_img w-12"
             src={gameIcon}
             alt="Game"
           />
-          <p className="app__mainpreview-slide_list-item_name pl-5">
+          <p className="app__games_slider-slide_list-item_name pl-5">
             {gameName}
           </p>
         </li>
@@ -75,10 +75,10 @@ const MainPreview = ({
     });
   };
   return (
-    <div className="app__mainpreview flex pl-6">
+    <div className="app__games_slider flex pl-6">
       {showGameOnSelect()}
 
-      <ul className="app__mainpreview-slide_list w-3/12 ml-2 rounded-tr-lg rounded-br-lg">
+      <ul className="app__games_slider-slide_list w-3/12 ml-2 rounded-tr-lg rounded-br-lg">
         {renderGamesList()}
       </ul>
     </div>
@@ -92,4 +92,4 @@ const mapStateToProps = (state) => {
   };
 };
 
-export default connect(mapStateToProps, { selectGameAction })(MainPreview);
+export default connect(mapStateToProps, { selectGameAction })(GamesSlider);

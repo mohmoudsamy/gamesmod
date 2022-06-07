@@ -1,0 +1,36 @@
+.app__games_sale {
+  font: {
+    size: 16px;
+    weight: 600;
+  }
+  &-upper_bar {
+    &-controllers {
+      span {
+        &:hover {
+          color: $lightGreyColor;
+        }
+      }
+    }
+  }
+
+  &-games_list {
+    &-game_info {
+      &-category {
+        color: $lightGreyColor;
+      }
+      &-price {
+        span {
+          &.game__discount {
+            border-radius: 6px;
+            background-color: $greenColor;
+            color: $coalColor;
+          }
+          &.game__price_before {
+            color: $lightGreyColor;
+            text-decoration: line-through;
+          }
+        }
+      }
+    }
+  }
+}

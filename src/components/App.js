@@ -6,7 +6,8 @@ import "../assets/styles/app.css";
 // Layouts
 import Header from "../layouts/Header";
 import Sidebar from "../layouts/Sidebar";
-import MainPreview from "./MainPreview";
+import GamesSlider from "./GamesSlider";
+import GamesSale from "./GamesSale";
 
 const App = () => {
   return (
@@ -16,7 +17,8 @@ const App = () => {
       </div>
       <div className=" w-10/12">
         <Header />
-        <MainPreview />
+        <GamesSlider />
+        <GamesSale />
       </div>
     </div>
   );

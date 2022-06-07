@@ -1,3 +1,4 @@
+// Import Slider Images
 import spiderImg from "../../assets/images/slider/spiderman.jpg";
 import spiderIcon from "../../assets/images/slider/spiderman_icon.jpg";
 
@@ -13,6 +14,14 @@ import watchdogsIcon from "../../assets/images/slider/watchdogs_icon.jpeg";
 import farcryImg from "../../assets/images/slider/farcry.jpg";
 import farcryIcon from "../../assets/images/slider/farcry_icon.png";
 
+// Import Sales Images
+import valheimImg from "../../assets/images/sale/valheim.jpg";
+import bioshockImg from "../../assets/images/sale/bioshock.jpg";
+import unravelImg from "../../assets/images/sale/unravel.jpg";
+import ticktockImg from "../../assets/images/sale/ticktock.jpg";
+import hitmanImg from "../../assets/images/sale/hitman.jpg";
+
+// Export Slider Images
 export {
   spiderImg,
   spiderIcon,
@@ -25,3 +34,6 @@ export {
   farcryImg,
   farcryIcon,
 };
+
+// Export SLider Images
+export { valheimImg, bioshockImg, unravelImg, ticktockImg, hitmanImg };

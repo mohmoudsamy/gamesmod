@@ -1,4 +1,4 @@
-.app__mainpreview {
+.app__games_slider {
   &-current_slide {
     img {
       z-index: -1;
@@ -34,7 +34,7 @@
   &-slide_list {
     background-color: $coalColor;
     &-item {
-      border-bottom: 1px solid $whiteColor;
+      // border-bottom: 1px solid $whiteColor;
       &:hover {
         background-color: $darkGreyColor;
       }

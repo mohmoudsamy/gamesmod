@@ -52,7 +52,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="app__sidebar border-r-2 pr-3">
+    <div className="app__sidebar border-r-2 pr-3 h-full">
       <div className="app__sidebar-logo">
         <img src={logo} alt="Logo" className="cursor-pointer" />
       </div>
