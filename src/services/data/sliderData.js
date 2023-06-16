@@ -33,7 +33,7 @@ const sliderData = () => {
     gameThree: {
       gameName: "Minecraft",
       gameText: "The hunt is on in Fortnite Chapter 2 - Season 5: Zero Point.",
-      gameState: "Update",
+      gameState: "Free Now",
       gameImg: minecraftImg,
       gameIcon: minecraftIcon,
     },
@@ -46,10 +46,10 @@ const sliderData = () => {
       gameIcon: watchdogsIcon,
     },
     gameFive: {
-      gameName: "Far Cry",
+      gameName: "Far Cry 3",
       gameText:
         "Did I ever tell you what the definition of insanity is? Insanity is doing the exact... same fucking thing...",
-      gameState: "Update",
+      gameState: "Coming Soon",
       gameImg: farcryImg,
       gameIcon: farcryIcon,
     },

@@ -1,18 +1,4 @@
 .app__games_sale {
-  font: {
-    size: 16px;
-    weight: 600;
-  }
-  &-upper_bar {
-    &-controllers {
-      span {
-        &:hover {
-          color: $lightGreyColor;
-        }
-      }
-    }
-  }
-
   &-games_list {
     &-game_info {
       &-category {
@@ -32,5 +18,40 @@
         }
       }
     }
+  }
+}
+
+// Swiper Style
+
+.swiper {
+  min-height: 350px !important;
+  padding-top: 60px !important;
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 30px !important;
+    width: 35px;
+    height: 35px;
+    border: 2px solid $lightGreyColor;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    &:after {
+      transition: all 0.3s ease-in-out;
+      font-size: 14px;
+      color: $lightGreyColor;
+      width: 100%;
+      height: 100%;
+      line-height: 32px;
+      position: relative;
+      left: 12px;
+    }
+    &:hover {
+      border-color: $coalColor;
+      &:after {
+        color: $coalColor;
+      }
+    }
+  }
+  .swiper-button-prev {
+    left: 90%;
   }
 }

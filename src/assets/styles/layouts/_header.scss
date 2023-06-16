@@ -1,4 +1,6 @@
 .app__header {
+  background-color: $darkColor;
+  z-index: 6;
   &-navbar {
     li {
       a {
@@ -18,6 +20,20 @@
   }
   &-search_notification {
     color: $lightGreyColor;
+    .app__header-notification_bell {
+      color: darken($whiteColor, 70%);
+      .app__header-notification_count {
+        background-color: $blueColor;
+        width: 20px;
+        height: 20px;
+        line-height: 5px;
+        font-size: 0.75rem;
+        font-weight: 300;
+        color: $whiteColor;
+        right: -10px;
+        top: -8px;
+      }
+    }
     .app__header-notification_arrow {
       color: $darkGreyColor;
       margin-right: 3px;

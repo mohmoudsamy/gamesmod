@@ -1,14 +1,10 @@
-import React, { useState, useEffect, useRef } from "react";
-import Dropdown from "../components/Dropdown";
+import React, { useEffect, useRef } from "react";
+import Notifications from "../components/Notifications";
 
 // Font Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBell } from "@fortawesome/free-solid-svg-icons";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
-import { faCaretUp } from "@fortawesome/free-solid-svg-icons";
-const notificationIcon = <FontAwesomeIcon icon={faBell} />;
 const search = <FontAwesomeIcon icon={faSearch} />;
-const arrow = <FontAwesomeIcon icon={faCaretUp} />;
 
 const Header = () => {
   // Set Active Link Class On The Load
@@ -32,11 +28,14 @@ const Header = () => {
     });
   };
 
-  // Set State Of The Notification & Trigger The Notification Dropdown
-  const [open, setOpen] = useState(false);
+  const notifications = [
+    "New Message!",
+    "Item Purchased",
+    "Your package is shipped",
+  ];
 
   return (
-    <header className="app__header flex justify-between pl-6">
+    <header className="app__header flex justify-between pl-6 pb-6">
       {/* Header Navbar */}
       <ul className="app__header-navbar flex w-3/6 pt-2" ref={linkRef}>
         {links.map((link, i) => {
@@ -52,19 +51,11 @@ const Header = () => {
         })}
       </ul>
       {/* Header Search and Notifications */}
-      <div className="app__header-search_notification flex justify-evenly w-3/6">
-        <div className="app__header-notification relative text-2xl text-right mt-2 cursor-pointer w-1/6 flex flex-col">
-          <span onClick={() => setOpen(!open)}>{notificationIcon}</span>
-          <span
-            className={`app__header-notification_arrow ${
-              open ? "notification_open" : ""
-            }`}
-          >
-            {arrow}
-          </span>
-          <Dropdown open={open} />
+      <div className="app__header-search_notification flex justify-between w-3/6">
+        <div className="app__header-notification flex flex-col z-40">
+          <Notifications notifications={notifications} />
         </div>
-        <div className="app__header-search relative w-4/6">
+        <div className="app__header-search relative w-5/6">
           <span className="absolute top-2.5 left-3">{search}</span>
           <input
             type="search"

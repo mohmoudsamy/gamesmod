@@ -14,17 +14,16 @@ const GamesSlider = ({
   selectGameAction,
 }) => {
   // App Preview Reference for Changing Background From SCSS File
-  const ref = useRef(null);
+  const sliderRef = useRef(null);
 
   // Render The Selected Game
   const showGameOnSelect = () => {
     return Object.values(sliderGamesDataSelected).map((theSelectedGame, i) => {
       let { gameName, gameState, gameText, gameImg } = theSelectedGame;
-
       return (
         <div
           className="app__games_slider-current_slide w-9/12 flex flex-col justify-between bg-cover relative"
-          ref={ref}
+          ref={sliderRef}
           key={i}
         >
           <img
@@ -43,7 +42,7 @@ const GamesSlider = ({
               {gameText}
             </h2>
             <button type="submit">
-              Play For Free <span className="ml-2">{playArrow}</span>
+              Play Now <span className="ml-2">{playArrow}</span>
             </button>
           </div>
         </div>
@@ -59,8 +58,12 @@ const GamesSlider = ({
         <li
           className="app__games_slider-slide_list-item p-3 flex items-center cursor-pointer transition ease-in-out duration-500"
           key={i}
-          onClick={() => selectGameAction(game)}
-          onLoad={() => selectGameAction(Object.values(sliderGamesData)[0])}
+          onClick={() => {
+            selectGameAction(game);
+          }}
+          onLoad={() => {
+            selectGameAction(Object.values(sliderGamesData)[0]);
+          }}
         >
           <img
             className="app__games_slider-slide_list-item_img w-12"

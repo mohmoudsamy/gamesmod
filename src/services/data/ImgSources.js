@@ -12,7 +12,7 @@ import watchdogsImg from "../../assets/images/slider/watchdogs.jpg";
 import watchdogsIcon from "../../assets/images/slider/watchdogs_icon.jpeg";
 
 import farcryImg from "../../assets/images/slider/farcry.jpg";
-import farcryIcon from "../../assets/images/slider/farcry_icon.png";
+import farcryIcon from "../../assets/images/slider/farcry_icon.jpg";
 
 // Import Sales Images
 import valheimImg from "../../assets/images/sale/valheim.jpg";
@@ -20,6 +20,10 @@ import bioshockImg from "../../assets/images/sale/bioshock.jpg";
 import unravelImg from "../../assets/images/sale/unravel.jpg";
 import ticktockImg from "../../assets/images/sale/ticktock.jpg";
 import hitmanImg from "../../assets/images/sale/hitman.jpg";
+import codImg from "../../assets/images/sale/cod.jpg";
+import fallguysImg from "../../assets/images/sale/fallguys.jpg";
+import hulkImg from "../../assets/images/sale/hulk.jpg";
+import forzaImg from "../../assets/images/sale/forza.jpg";
 
 // Export Slider Images
 export {
@@ -35,5 +39,15 @@ export {
   farcryIcon,
 };
 
-// Export SLider Images
-export { valheimImg, bioshockImg, unravelImg, ticktockImg, hitmanImg };
+// Export Sale Images
+export {
+  valheimImg,
+  bioshockImg,
+  unravelImg,
+  ticktockImg,
+  hitmanImg,
+  codImg,
+  fallguysImg,
+  hulkImg,
+  forzaImg,
+};

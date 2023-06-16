@@ -5,6 +5,10 @@ import {
   unravelImg,
   ticktockImg,
   hitmanImg,
+  codImg,
+  fallguysImg,
+  hulkImg,
+  forzaImg,
 } from "./ImgSources";
 
 const saleData = () => {
@@ -45,6 +49,37 @@ const saleData = () => {
       gameCategory: "Action Games",
       gamePrice: "$23.99",
       hasDiscount: false,
+    },
+    gameSix: {
+      gameImg: codImg,
+      gameName: "Call of Duty®: Black Ops",
+      gameCategory: "Action Games",
+      gamePrice: "$38.81",
+      hasDiscount: true,
+      gameDiscount: "-30%",
+    },
+    gameSeven: {
+      gameImg: fallguysImg,
+      gameName: "Fall Guys",
+      gameCategory: "Interesting Games",
+      gamePrice: "$00.00",
+      hasDiscount: true,
+      gameDiscount: "-100%",
+    },
+    gameEight: {
+      gameImg: hulkImg,
+      gameName: "The Immortal Hulk",
+      gameCategory: "Stealth Games",
+      gamePrice: "$5.63",
+      hasDiscount: false,
+    },
+    gameNine: {
+      gameImg: forzaImg,
+      gameName: "Forza Horizon 5",
+      gameCategory: "Racing Games",
+      gamePrice: "$35.19",
+      hasDiscount: true,
+      gameDiscount: "-14%",
     },
   };
 };
